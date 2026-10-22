@@ -65,7 +65,7 @@ def tv_loss(img):
 
 # ========== 损失（权重重新标定）==========
 alpha = 1.0          # 内容权重
-beta  = 1e7          # 风格权重（可调，越大风格越浓）
+beta  = 1e6          # 风格权重（可调，越大风格越浓）
 gamma = 1e-6         # TV 权重（作用在像素上，数值很大，所以要用小权重）
 
 def compute_loss(gen_img, gen_features):
